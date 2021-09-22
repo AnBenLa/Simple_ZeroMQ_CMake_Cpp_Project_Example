@@ -27,4 +27,4 @@ jobs:
       - name: configure
         run: mkdir build && cd build && cmake ..
       - name: build
-        run: cmake --build . --target zmq_server
+        run: cd build && cmake --build . --target zmq_server
